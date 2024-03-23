@@ -20,6 +20,9 @@ defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'C
           <h2 class="text-3xl font-bold text-white">{{ nom_film }} 
             <!-- Affichage du genre à côté du titre -->
             <span v-for="(unGenre, index) in Genre" :key="index" class="text-sm text-gray-300 ml-2">{{ unGenre.genre_film }}</span>
+          
+            <!-- Affichage du genre à côté du titre -->
+            <span v-for="(uneVaraiante, index) in Variante" :key="index" class="text-sm text-gray-300 ml-2">({{ uneVaraiante.type }})</span>
           </h2>
           <div class="flex items-center mt-2">
             <span class="text-yellow-500">
@@ -36,18 +39,20 @@ defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'C
           <div class="flex flex-col mt-6 md:flex-row md:space-x-6">
             <div>
               <h3 class="text-white">Plateforme</h3>
+              <br>
               <div class="flex justify-center mt-4 md:mt-0">
                 <div v-for="(UnePlateforme, index) in Plateforme" :key="index" class="flex flex-col items-center mx-2">
-                  <img :src="UnePlateforme.logo" class="w-24 h-24 rounded-full border-4 border-yellow-500" :alt="UnePlateforme.plateforme_streaming" />
+                  <img :src="UnePlateforme.logo" class="w-24 h-24 rounded-full border-4 border-yellow-500 object-cover" :alt="UnePlateforme.plateforme_streaming" />
                   <p class="text-white">{{ UnePlateforme.plateforme_streaming }}</p>
                 </div>
               </div>
             </div>
             <div class="mt-6 md:mt-0">
               <h3 class="text-white">Support</h3>
+              <br>
               <div class="flex justify-center mt-4 md:mt-0">
                 <div v-for="(unSupport, index) in Support" :key="index" class="flex flex-col items-center mx-2">
-                  <img :src="unSupport.photo_support" class="w-24 h-24 rounded-full border-4 border-yellow-500" :alt="unSupport.photo_support" />
+                  <img :src="unSupport.photo_support" class="w-24 h-24 rounded-full border-4 border-yellow-500 object-cover" :alt="unSupport.photo_support" />
                   <p class="text-white">{{ unSupport.titre_support }}</p>
                 </div>
               </div>
@@ -55,17 +60,22 @@ defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'C
           </div>
           <div>
             <h3 class="text-white mt-6">Célébrités</h3>
-            <RouterLink :to="`/celebrite/${id}`" class="text-white">
+            <br>
+           
               <div class="flex justify-center mt-4">
-                <div v-for="(uneCelebrite, index) in Celebrite" :key="index" class="flex flex-col items-center mx-2">
-                  <img :src="uneCelebrite.photo_celebrite" class="w-24 h-24 rounded-full border-4 border-yellow-500" :alt="uneCelebrite.nom_celebrite" />
+                <div v-for="(uneCelebrite, index) in Celebrite" :key="index" class="flex flex-col  mx-4">
+                  <RouterLink :to="{ name: '/celebrite/[id]', params: { id: uneCelebrite.id } }">
+                  <img :src="uneCelebrite.photo_celebrite" class="w-24 h-24 rounded-full border-4 border-yellow-500 object-cover" :alt="uneCelebrite.nom_celebrite" />
                   <p class="text-white">{{ uneCelebrite.nom_celebrite }}</p>
+                </RouterLink>
                 </div>
+                
               </div>
-            </RouterLink>
+           
           </div>
         </div>
       </div>
     </div>
   </div>
+  
 </template>

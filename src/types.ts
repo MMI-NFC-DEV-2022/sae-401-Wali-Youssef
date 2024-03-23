@@ -8,5 +8,7 @@ image_film: string;
 note_film: number;
 description2_film: string;
 
+nom_celebrite: string;
+
 
 }

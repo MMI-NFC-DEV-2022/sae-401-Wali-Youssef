@@ -75,6 +75,7 @@ export type Database = {
         Row: {
           date_de_naissance: string | null
           date_deces: string | null
+          description_celebrite: string | null
           id: number
           nationalite_celebrite: string | null
           nom_celebrite: string | null
@@ -84,6 +85,7 @@ export type Database = {
         Insert: {
           date_de_naissance?: string | null
           date_deces?: string | null
+          description_celebrite?: string | null
           id?: number
           nationalite_celebrite?: string | null
           nom_celebrite?: string | null
@@ -93,6 +95,7 @@ export type Database = {
         Update: {
           date_de_naissance?: string | null
           date_deces?: string | null
+          description_celebrite?: string | null
           id?: number
           nationalite_celebrite?: string | null
           nom_celebrite?: string | null
