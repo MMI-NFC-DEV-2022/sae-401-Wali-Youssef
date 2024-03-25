@@ -1,46 +1,65 @@
-# base-vue-ts-tailwind-unplugin-vue-router-ppierre
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/DLDyybNZ)
 
-This template should help get you started developing with Vue 3 in Vite.
+Nom : Wali
+Prénom : Youssef
 
-## Recommended IDE Setup
+SAE 401 : Site de référenecement de films
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+URL du site : https://visifilm.youssefwali.fr/ 
 
-## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Lien vers les types TypeScript exporté depuis Supabase: Types TypeScript
+Descriptif des pages et fonctionnalités développées
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Page de Connexion
+[URL: /connexion](https://visifilm.youssefwali.fr/login-logout)
+Fonctionnalités: 
 
-## Customize configuration
+Connexion avec GitHub
+Déconnexion
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+Page Films
+[URL: /films](https://visifilm.youssefwali.fr/films)
+Fonctionnalités:
 
-```sh
-npm install
-```
+Affichage de la liste des films
+Possibilité de cliquer sur un film pour accéder à sa page détaillée 
 
-### Compile and Hot-Reload for Development
+Page Single Film
+[URL: /films/{id}](https://visifilm.youssefwali.fr/films/2)
+Fonctionnalités:
 
-```sh
-npm run dev
-```
+Affichage détaillé des informations d'un film
+Affichage des célébrité liés au film 
+Affichage des supports et des plateformes liés au film
 
-### Type-Check, Compile and Minify for Production
+Page support 
+[URL: /support ](https://visifilm.youssefwali.fr/support/1)
+Fonctionnalités:
 
-```sh
-npm run build
-```
+Afficher les support avec leurs prixs et des informations et un lien pour l'acheter
+Dans cette page il y a aussi les films qui sont disponible dans ce support
 
-### Lint with [ESLint](https://eslint.org/)
+Page célébrité 
+[\[URL: /celebrité/\[id\]\] ](https://visifilm.youssefwali.fr/celebrite/7)
 
-```sh
-npm run lint
-```
+Affiche le nom, prenom, photo,  description d'une celebrité.
+On peut aussi voir dans quelle film a joué cette célebrité.
+
+
+
+Page Ajouter des Films
+[URL: /ajouter-film](https://visifilm.youssefwali.fr/films/edit)
+Fonctionnalités:
+
+Formulaire pour ajouter manuellement des films dans la base de données et prévisualisation en direct
+
+
+
+Fonctionnalités:
+
+Design System et Composants Responsive
+Design System: Oui
+Composants Responsive: Oui 
