@@ -461,6 +461,7 @@ export type Database = {
         Row: {
           description_support: string | null
           id: number
+          lien_support: string | null
           photo_support: string | null
           prix_support: number | null
           titre_support: string | null
@@ -468,6 +469,7 @@ export type Database = {
         Insert: {
           description_support?: string | null
           id?: number
+          lien_support?: string | null
           photo_support?: string | null
           prix_support?: number | null
           titre_support?: string | null
@@ -475,6 +477,7 @@ export type Database = {
         Update: {
           description_support?: string | null
           id?: number
+          lien_support?: string | null
           photo_support?: string | null
           prix_support?: number | null
           titre_support?: string | null
