@@ -27,7 +27,7 @@ const route = useRoute('/support/[id]');
               <span class="text-white font-bold text-lg">{{ prix_support }} €</span>
             </div>
             <p class="text-gray-300 mt-4">{{ description_support }}</p>
-            <a href="#" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href= {{ lien_support }} class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Acheter
             </a>
           </div>
