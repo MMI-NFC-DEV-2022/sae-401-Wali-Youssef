@@ -343,6 +343,42 @@ export type Database = {
         }
         Relationships: []
       }
+      Projet: {
+        Row: {
+          description_projet: string | null
+          description2_projet: string | null
+          id: number
+          lien_projet: string | null
+          nom_projet: string | null
+          photo_projet: string | null
+          technologie1_projet: string | null
+          technologie2_projet: string | null
+          technologie3_projet: string | null
+        }
+        Insert: {
+          description_projet?: string | null
+          description2_projet?: string | null
+          id?: number
+          lien_projet?: string | null
+          nom_projet?: string | null
+          photo_projet?: string | null
+          technologie1_projet?: string | null
+          technologie2_projet?: string | null
+          technologie3_projet?: string | null
+        }
+        Update: {
+          description_projet?: string | null
+          description2_projet?: string | null
+          id?: number
+          lien_projet?: string | null
+          nom_projet?: string | null
+          photo_projet?: string | null
+          technologie1_projet?: string | null
+          technologie2_projet?: string | null
+          technologie3_projet?: string | null
+        }
+        Relationships: []
+      }
       Quartier: {
         Row: {
           fk_commune: number | null
@@ -423,18 +459,21 @@ export type Database = {
       }
       Support: {
         Row: {
+          description_support: string | null
           id: number
           photo_support: string | null
           prix_support: number | null
           titre_support: string | null
         }
         Insert: {
+          description_support?: string | null
           id?: number
           photo_support?: string | null
           prix_support?: number | null
           titre_support?: string | null
         }
         Update: {
+          description_support?: string | null
           id?: number
           photo_support?: string | null
           prix_support?: number | null

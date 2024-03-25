@@ -15,22 +15,27 @@ const route = useRoute('/support/[id]');
 
 
 <template>
-  <div class="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-4xl mx-auto">
-      <div class="flex flex-col md:flex-row">
-        <div class="md:w-1/2">
-          <img class="w-full h-auto rounded-lg shadow-lg" :src="photo_support" :alt="nom_celebrite" />
-        </div>
-        <div class="md:w-1/2 md:pl-8 mt-8 md:mt-0">
-          <h2 class="text-3xl font-bold text-white">{{ titre_support }} </h2>
-          <div class="flex items-center mt-2">
-          
+    <div class="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2">
+            <img class="w-full h-auto rounded-lg shadow-lg" :src="photo_support" :alt="nom_celebrite" />
           </div>
-          <p class="text-gray-300 mt-4">{{ description_support }}</p>
+          <div class="md:w-1/2 md:pl-8 mt-8 md:mt-0">
+            <h2 class="text-3xl font-bold text-white">{{ titre_support }} </h2>
+            <div class="flex items-center mt-2">
+              <span class="text-white font-bold text-lg">{{ prix_support }} €</span>
+            </div>
+            <p class="text-gray-300 mt-4">{{ description_support }}</p>
+            <a href="#" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Acheter
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+ 
 
+    
 
   <div class="container mx-auto my-8">
     <h2 class="text-2xl font-bold text-white mb-4">Films</h2>
