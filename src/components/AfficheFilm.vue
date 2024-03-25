@@ -7,7 +7,7 @@ defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'C
 <template>
 
 
-<div class="flex min-h-screen items-center justify-center">
+<div class="flex min-h-screen items-center justify-center bg-gray-900">
 
     <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
       <div class="h-96 w-72">

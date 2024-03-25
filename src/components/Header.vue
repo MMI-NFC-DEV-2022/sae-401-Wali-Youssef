@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-800 p-4">
+  <nav class="bg-gray-800  p-4">
     <div class="flex justify-between items-center">
       <div class="flex-shrink-0">
         <!-- Remplacez "chemin/vers/mon-logo.png" par le chemin de votre logo -->

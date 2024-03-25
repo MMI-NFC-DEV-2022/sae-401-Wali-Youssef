@@ -9,7 +9,7 @@ defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'C
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="min-h-screen bg-custom-blue py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto">
       <div class="flex flex-col md:flex-row">
         <div class="md:w-1/2">

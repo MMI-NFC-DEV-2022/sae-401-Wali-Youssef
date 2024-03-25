@@ -38,7 +38,7 @@ const route = useRoute('/support/[id]');
     
 
   <div class="container mx-auto my-8">
-    <h2 class="text-2xl font-bold text-white mb-4">Films</h2>
+    <h2 class="text-2xl font-bold text-white mb-4">Films dans lequelles il a joué</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       <div v-for="unFilm in Films" :key="unFilm.id" class="text-black flex flex-col items-center bg-gray-800 rounded-lg shadow-lg p-4">
         <RouterLink :to="{ name: '/film/[id]', params: { id: unFilm.id } }">
