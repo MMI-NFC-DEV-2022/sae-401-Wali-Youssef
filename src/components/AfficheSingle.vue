@@ -5,7 +5,7 @@ import { supabase } from '@/supabase';
 const route = useRoute('/films/[id]');
 import type { Database, Tables } from '@/supabase-types';
 import { platform } from 'process';
-defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'Celebrite'>[]} & {Genre:Tables<'Genre'>[]} & {Saga:Tables<'Saga'>[]} & {Variante:Tables<'Variante'>} & {Support:Tables<'Support'>} & {Plateforme:Tables<'Plateforme'>}>()
+defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'Celebrite'>[]} & {Genre:Tables<'Genre'>[]} & {Saga:Tables<'Saga'>[]} & {Variante:Tables<'Variante'>} & {Support:Tables<'Support'>[]} & {Plateforme:Tables<'Plateforme'>}>()
 </script>
 
 <template>
@@ -59,8 +59,10 @@ defineProps <Database["public"]["Tables"]["Films"]["Row"] & {Celebrite:Tables<'C
               <br>
               <div class="flex justify-center mt-4 md:mt-0">
                 <div v-for="(unSupport, index) in Support" :key="index" class="flex flex-col items-center mx-2">
-                  <img :src="unSupport.photo_support" class="w-24 h-24 rounded-full border-4 border-yellow-500 object-cover" :alt="unSupport.photo_support" />
+                  <RouterLink :to="{ name: '/support/[id]', params: { id: unSupport.id } }">
+                  <img :src="unSupport.photo_support ?? undefined" class="w-24 h-24 rounded-full border-4 border-yellow-500 object-cover" :alt="unSupport.photo_support" />
                   <p class="text-white">{{ unSupport.titre_support }}</p>
+                </RouterLink>
                 </div>
               </div>
             </div>

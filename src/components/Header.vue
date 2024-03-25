@@ -1,7 +1,9 @@
-<template><nav class="bg-gray-800 p-4">
+<template>
+  <nav class="bg-gray-800 p-4">
     <div class="flex justify-between items-center">
       <div class="flex-shrink-0">
-        <a href="#" class="text-white text-lg font-semibold">Mon Site</a>
+        <!-- Remplacez "chemin/vers/mon-logo.png" par le chemin de votre logo -->
+        <img src="../assets/logo1.png" alt="Logo de mon site" class="h-12">
       </div>
       <div class="md:hidden">
         <!-- Hamburger icon -->
@@ -20,7 +22,7 @@
         </div>
       </div>
     </div>
-    <!-- Mobile menu, toggle classNamees based on menu state. -->
+    <!-- Mobile menu, toggle classes based on menu state -->
     <div id="mobile-menu" class="md:hidden hidden">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <RouterLink to="/" class="block text-white hover:text-gray-300">Home</RouterLink>
@@ -30,7 +32,7 @@
       </div>
     </div>
   </nav>
-  </template>
+</template>
 
 <script setup lang="ts">
 document.addEventListener('DOMContentLoaded', function() {
