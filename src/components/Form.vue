@@ -41,8 +41,10 @@ if (route.params.id) {
                 }">
                 <FormKit name="nom_film" label="Titre du film" />
                 <FormKit name="description_film" label="Description du film" />
+                <FormKit name="description2_film" label="Description longue du film" />
                 <FormKit name="note_film" type="number" label="Note /5" />
                 <FormKit name="image_film" label="Images du film" />
+
             </FormKit>
         </div>
     </div>

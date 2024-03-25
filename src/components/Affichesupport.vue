@@ -41,7 +41,7 @@ const route = useRoute('/support/[id]');
     <h2 class="text-2xl font-bold text-white mb-4">Films </h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       <div v-for="unFilm in Films" :key="unFilm.id" class="text-black flex flex-col items-center bg-gray-800 rounded-lg shadow-lg p-4">
-        <RouterLink :to="{ name: '/film/[id]', params: { id: unFilm.id } }">
+        <RouterLink :to="{ name: '/films/[id]', params: { id: unFilm.id } }">
           <img class="w-48 h-auto rounded-lg mb-4" :src="unFilm.image_film ?? undefined" :alt="unFilm.nom_film" />
           <p class="text-white text-center">{{ unFilm.nom_film }}</p>
         </RouterLink>
