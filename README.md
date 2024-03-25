@@ -42,7 +42,14 @@ Fonctionnalités:
 Afficher les support avec leurs prixs et des informations et un lien pour l'acheter
 Dans cette page il y a aussi les films qui sont disponible dans ce support
 
-Page célébrité 
+Page Celebrite 
+[URL: /celebrité/\] ](https://visifilm.youssefwali.fr/celebrite) 
+
+Affiche toutes les celebrite
+
+
+
+Page célébrité(id)
 [\[URL: /celebrité/\[id\]\] ](https://visifilm.youssefwali.fr/celebrite/7)
 
 Affiche le nom, prenom, photo,  description d'une celebrité.
